@@ -11,8 +11,34 @@
     nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
 
-    .products { padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-    .product-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); padding: 20px; text-align: center; }
+    .products {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
     .product-card h3 { margin: 10px 0; }
     .product-card p { margin: 5px 0; font-size: 0.95rem; }
     .price { font-weight: bold; color: #ff7aa2; margin-top: 8px; }
@@ -36,33 +62,39 @@
   </header>
 
   <section class="products">
+
     <div class="product-card">
+      <img src="https://raw.githubusercontent.com/djhpsawse/every-charm/main/photos/pink%20diamond.png"
+           alt="Rose Quartz Charm bracelet made with soft pink gemstone beads">
       <h3>Rose Quartz Charm</h3>
-      <p>Category: Gemstone</p>
       <p class="price">£18.00</p>
       <p class="stock">In Stock: 12</p>
     </div>
 
     <div class="product-card">
+      <img src="https://raw.githubusercontent.com/djhpsawse/every-charm/main/photos/princess%20pearl.png"
+           alt="Ocean Breeze bracelet featuring blue and white natural stone beads">
       <h3>Ocean Breeze</h3>
-      <p>Category: Natural Stone</p>
       <p class="price">£22.00</p>
       <p class="stock">In Stock: 7</p>
     </div>
 
     <div class="product-card">
+      <img src="https://raw.githubusercontent.com/djhpsawse/every-charm/main/photos/strawberry%20shortcake.png"
+           alt="Midnight Glow bracelet with dark onyx-style beads">
       <h3>Midnight Glow</h3>
-      <p>Category: Onyx</p>
       <p class="price">£20.00</p>
       <p class="stock">In Stock: 15</p>
     </div>
 
     <div class="product-card">
+      <img src="https://wallpapercave.com/wp/wp2013748.jpg"
+           alt="Custom name bracelet with personalised bead lettering">
       <h3>Custom Name Bracelet</h3>
-      <p>Category: Personalised</p>
       <p class="price">From £25.00</p>
       <p class="stock">Made to Order</p>
     </div>
+
   </section>
 
   <footer>
