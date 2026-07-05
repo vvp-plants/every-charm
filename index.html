@@ -5,26 +5,121 @@
   <title>Every Charm - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #fdf6f9; color: #333; }
-    header { background: #ff7aa2; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
-    header h1 { margin: 0; font-size: 1.8rem; }
-    nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fdf6f9;
+      color: #333;
+    }
 
-    .hero { padding: 60px 40px; text-align: center; background: linear-gradient(135deg, #ffe0ec, #fff); }
-    .hero h2 { font-size: 2.2rem; margin-bottom: 10px; }
-    .hero p { font-size: 1.1rem; margin-bottom: 20px; }
+    header {
+      background: #ff7aa2;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-    .products { padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-    .product-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); padding: 20px; text-align: center; }
-    .product-card h3 { margin: 10px 0; }
-    .product-card p { margin: 5px 0; font-size: 0.95rem; }
-    .price { font-weight: bold; color: #ff7aa2; margin-top: 8px; }
-    .stock { font-size: 0.9rem; color: #555; }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
 
-    footer { background: #333; color: #fff; text-align: center; padding: 20px 10px; margin-top: 40px; font-size: 0.9rem; }
-    footer a { color: #ff7aa2; text-decoration: none; margin: 0 8px; }
-    footer a:hover { text-decoration: underline; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 60px 40px;
+      text-align: center;
+      background: linear-gradient(135deg, #ffe0ec, #fff);
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0;
+    }
+
+    .product-card p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #ff7aa2;
+      margin-top: 8px;
+    }
+
+    .stock {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff7aa2;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -44,35 +139,42 @@
     <p>Browse our full inventory of handmade bracelets.</p>
   </section>
 
-<section class="products">
-  <div class="product-card">
-    <img src="https://raw.githubusercontent.com/djhpsawse/every-charm/refs/heads/main/photos/pink%20diamond.png" alt="Pink Diamond Bracelet">
-    <h3>Pink Diamond</h3>
-    <p class="price">£2.50</p>
-    <p class="stock">In Stock: 5</p>
-  </div>
+  <section class="products">
 
-  <div class="product-card">
-    <img src="https://raw.githubusercontent.com/djhpsawse/every-charm/refs/heads/main/photos/princess%20pearl.png" alt="Princess Pearl Bracelet">
-    <h3>Princess Pearl</h3>
-    <p class="price">£2.50</p>
-    <p class="stock">In Stock: 4</p>
-  </div>
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/djhpsawse/every-charm/refs/heads/main/photos/pink%20diamond.png"
+           alt="Pink Diamond bracelet made with pink gem-style beads">
+      <h3>Pink Diamond</h3>
+      <p class="price">£2.50</p>
+      <p class="stock">In Stock: 5</p>
+    </div>
 
-  <div class="product-card">
-    <img src="https://raw.githubusercontent.com/djhpsawse/every-charm/refs/heads/main/photos/strawberry%20shortcake.png" alt="Strawberry Shortcake Bracelet">
-    <h3>Strawberry Shortcake</h3>
-    <p class="price">£2.50</p>
-    <p class="stock">In Stock: 6</p>
-  </div>
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/djhpsawse/every-charm/refs/heads/main/photos/princess%20pearl.png"
+           alt="Princess Pearl bracelet featuring white pearl-style beads">
+      <h3>Princess Pearl</h3>
+      <p class="price">£2.50</p>
+      <p class="stock">In Stock: 4</p>
+    </div>
 
-  <div class="product-card">
-    <img src="https://wallpapercave.com/wp/wp2013748.jpg" alt="Custom Name Bracelet">
-    <h3>Custom Name Bracelet</h3>
-    <p class="price">From £3.00</p>
-    <p class="stock">Made to Order</p>
-  </div>
-</section>
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/djhpsawse/every-charm/refs/heads/main/photos/strawberry%20shortcake.png"
+           alt="Strawberry Shortcake bracelet with red and pink themed beads">
+      <h3>Strawberry Shortcake</h3>
+      <p class="price">£2.50</p>
+      <p class="stock">In Stock: 6</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://wallpapercave.com/wp/wp2013748.jpg"
+           alt="Custom name bracelet with personalised bead lettering">
+      <h3>Custom Name Bracelet</h3>
+      <p class="price">From £3.00</p>
+      <p class="stock">Made to Order</p>
+    </div>
+
+  </section>
+
   <footer>
     <p>&copy; 2026 Every Charm · All rights reserved.</p>
     <p>
